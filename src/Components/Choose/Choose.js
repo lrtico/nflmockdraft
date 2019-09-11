@@ -32,39 +32,6 @@ const Choose = props => {
                   </div>
                 </div>
               ))}
-              <div className="division">
-                <span>
-                  South
-                </span>
-                <div className="division__teams">
-                  <div className="division__team division__team--texans" />
-                  <div className="division__team division__team--colts" />
-                  <div className="division__team division__team--jaguars" />
-                  <div className="division__team division__team--titans" />
-                </div>
-              </div>
-              <div className="division">
-                <span>
-                  East
-                </span>
-                <div className="division__teams">
-                  <div className="division__team division__team--bills" />
-                  <div className="division__team division__team--dolphins" />
-                  <div className="division__team division__team--jets" />
-                  <div className="division__team division__team--patriots" />
-                </div>
-              </div>
-              <div className="division">
-                <span>
-                  West
-                </span>
-                <div className="division__teams">
-                  <div className="division__team division__team--broncos" />
-                  <div className="division__team division__team--chiefs" />
-                  <div className="division__team division__team--raiders" />
-                  <div className="division__team division__team--chargers" />
-                </div>
-              </div>
             </div>
           </div>
         ))}
