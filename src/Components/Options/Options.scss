@@ -1,0 +1,60 @@
+.options-wrapper {
+  position: relative;
+
+  .options {
+    @include flexbox;
+    @include align-items(flex-start);
+
+    .options__team-ribbon {
+      background-image: url(../../nfl-team-logos-sprite.png);
+      background-color: $ravens-purple;
+      background-position: 6px 12px;
+      background-repeat: no-repeat;
+      background-size: 900px;
+      @include flex(0 0 120px);
+      height: 150px;
+      margin-left: 18px;
+      margin-right: 36px;
+      position: relative;
+      width: 120px;
+
+      &:after {
+        border-left: 60px solid transparent;
+        border-bottom: 18px solid white;
+        border-right: 60px solid transparent;
+        content: "";
+        height: 0;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 0px;
+      }
+
+      &.ravens {
+        background-color: $ravens-purple;
+        background-position: 6px 12px;
+      }
+    }
+  }
+  .options__btn {
+    margin: 62px 0px 36px 18px;
+  }
+
+  > .text-link {
+    position: fixed;
+    bottom: 18px;
+    left: 18px;
+
+    &.ravens {
+      color: $ravens-purple;
+
+      &:hover {
+        color: lighten($ravens-purple, 10%);
+      }
+
+      .arrow-left {
+        @include css-triangle($ravens-purple, left);
+      }
+    }
+  }
+}

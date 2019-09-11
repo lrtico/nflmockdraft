@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i,900|Stint+Ultra+Expanded&display=swap");
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "../src//Components/App/App.scss";
+@import "../src/Components/Choose/Choose.scss";
+@import "../src/Components/Options/Options.scss";
+@import "../src/Components/Simulator/Simulator.scss";
+
+/*Normalize*/
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: yellow;
+}
+::selection {
+  background: yellow;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #757575;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
+    font-family: "Stint Ultra Expanded", sans-serif;
+    margin: 0;
+  }
+}

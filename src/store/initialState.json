@@ -1,0 +1,2104 @@
+{
+  "choose": [
+    {
+      "conference": "AFC",
+      "divisions": [
+        {
+          "division": "North",
+          "teams": [
+            {
+              "id": 1,
+              "name": "Baltimore Ravens",
+              "shortName": "ravens"
+            },
+            {
+              "id": 2,
+              "name": "Cincinnati Bengals",
+              "shortName": "bengals"
+            },
+            {
+              "id": 3,
+              "name": "Cleveland Browns",
+              "shortName": "browns"
+            },
+            {
+              "id": 4,
+              "name": "Pittsburgh Steelers",
+              "shortName": "steelers"
+            }
+          ]
+        },
+        {
+          "division": "South",
+          "teams": [
+            {
+              "id": 5,
+              "name": "Houston Texans",
+              "shortName": "texans"
+            },
+            {
+              "id": 6,
+              "name": "Indianapolis Colts",
+              "shortName": "colts"
+            },
+            {
+              "id": 7,
+              "name": "Jacksonville Jaguars",
+              "shortName": "jaguars"
+            },
+            {
+              "id": 8,
+              "name": "Tennessee Titans",
+              "shortName": "titans"
+            }
+          ]
+        },
+        {
+          "division": "East",
+          "teams": [
+            {
+              "id": 9,
+              "name": "Buffalo Bills",
+              "shortName": "bills"
+            },
+            {
+              "id": 10,
+              "name": "Miami Dolphins",
+              "shortName": "dolphins"
+            },
+            {
+              "id": 11,
+              "name": "New York Jets",
+              "shortName": "jets"
+            },
+            {
+              "id": 12,
+              "name": "New England Patriots",
+              "shortName": "patriots"
+            }
+          ]
+        },
+        {
+          "division": "West",
+          "teams": [
+            {
+              "id": 13,
+              "name": "Denver Broncos",
+              "shortName": "broncos"
+            },
+            {
+              "id": 14,
+              "name": "Kansas City Chiefs",
+              "shortName": "chiefs"
+            },
+            {
+              "id": 15,
+              "name": "Las Vegas Raiders",
+              "shortName": "raiders"
+            },
+            {
+              "id": 16,
+              "name": "Los Angeles Chargers",
+              "shortName": "chargers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conference": "NFC",
+      "divisions": [
+        {
+          "division": "North",
+          "teams": [
+            {
+              "id": 17,
+              "name": "Chicago Bears",
+              "shortName": "bears"
+            },
+            {
+              "id": 18,
+              "name": "Detroit Lions",
+              "shortName": "lions"
+            },
+            {
+              "id": 19,
+              "name": "Green Bay Packers",
+              "shortName": "packers"
+            },
+            {
+              "id": 20,
+              "name": "Minnesota Vikings",
+              "shortName": "vikings"
+            }
+          ]
+        },
+        {
+          "division": "South",
+          "teams": [
+            {
+              "id": 21,
+              "name": "Atlanta Falcons",
+              "shortName": "falcons"
+            },
+            {
+              "id": 22,
+              "name": "Carolina Panthers",
+              "shortName": "panthers"
+            },
+            {
+              "id": 23,
+              "name": "New Orleans Saints",
+              "shortName": "saints"
+            },
+            {
+              "id": 24,
+              "name": "Tampa Bay Buccaneers",
+              "shortName": "buccaneers"
+            }
+          ]
+        },
+        {
+          "division": "East",
+          "teams": [
+            {
+              "id": 25,
+              "name": "Dallas Cowboys",
+              "shortName": "cowboys"
+            },
+            {
+              "id": 26,
+              "name": "New York Giants",
+              "shortName": "giants"
+            },
+            {
+              "id": 27,
+              "name": "Philadelphia Eagles",
+              "shortName": "eagless"
+            },
+            {
+              "id": 28,
+              "name": "Washington Redskins",
+              "shortName": "redskins"
+            }
+          ]
+        },
+        {
+          "division": "West",
+          "teams": [
+            {
+              "id": 29,
+              "name": "Arizona Cardinals",
+              "shortName": "cardinals"
+            },
+            {
+              "id": 30,
+              "name": "Los Angeles Rams",
+              "shortName": "rams"
+            },
+            {
+              "id": 31,
+              "name": "San Francisco 49ers",
+              "shortName": "49ers"
+            },
+            {
+              "id": 32,
+              "name": "Seattle Seahawks",
+              "shortName": "seahawks"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "Id": 1,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Baltimore Ravens",
+      "ShortName": "ravens",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Cincinnati Bengals",
+      "ShortName": "bengals",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Cleveland Browns",
+      "ShortName": "browns",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Pittsburgh Steelers",
+      "ShortName": "steelers",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Houston Texans",
+      "ShortName": "texans",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 6,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Indianapolis Colts",
+      "ShortName": "colts",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Jacksonville Jaguars",
+      "ShortName": "jaguars",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 8,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Tennessee Titans",
+      "ShortName": "titans",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Buffalo Bills",
+      "ShortName": "bills",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 10,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Miami Dolphins",
+      "ShortName": "dolphins",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 11,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "New York",
+      "ShortName": "jets",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 12,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "New England Patriots",
+      "ShortName": "patriots",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 13,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Denver Broncos",
+      "ShortName": "broncos",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 14,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Kansas City Chiefs",
+      "ShortName": "chiefs",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 15,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Las Vegas Raiders",
+      "ShortName": "raiders",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 16,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Los Angeles Chargers",
+      "ShortName": "chargers",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 17,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Chicago Bears",
+      "ShortName": "bears",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 18,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Detroit Lions",
+      "ShortName": "lions",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 19,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Green Bay Packers",
+      "ShortName": "packers",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 20,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Minnestoa Vikings",
+      "ShortName": "vikings",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 21,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Atlanta Falcons",
+      "ShortName": "falcons",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 22,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Carolina Panthers",
+      "ShortName": "panthers",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 23,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "New Orleans Saints",
+      "ShortName": "saints",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 24,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Tampa Bay Buccaneers",
+      "ShortName": "buccaneers",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 25,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Dallas Cowboys",
+      "ShortName": "cowboys",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 26,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "New York Giants",
+      "ShortName": "giants",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 27,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Philadelphia Eagles",
+      "ShortName": "eagles",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 28,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Washington Redskins",
+      "ShortName": "redskins",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 29,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Arizona Cardinals",
+      "ShortName": "cardinals",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 30,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Los Angeles Rams",
+      "ShortName": "rams",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 31,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "San Francisco 49ers",
+      "ShortName": "49ers",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    },
+    {
+      "Id": 32,
+      "IsSelected": false,
+      "OnTheClock": false,
+      "Name": "Seattle Seahawks",
+      "ShortName": "seahawks",
+      "PositionNeeds": [
+        {
+          "Id": 1,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 2,
+          "IsFilled": false,
+          "Need": "DT"
+        },
+        {
+          "Id": 3,
+          "IsFilled": false,
+          "Need": "DE"
+        },
+        {
+          "Id": 4,
+          "IsFilled": false,
+          "Need": "S"
+        },
+        {
+          "Id": 5,
+          "IsFilled": false,
+          "Need": "ILB"
+        },
+        {
+          "Id": 6,
+          "IsFilled": false,
+          "Need": "C"
+        },
+        {
+          "Id": 7,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 8,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 9,
+          "IsFilled": false,
+          "Need": null
+        },
+        {
+          "Id": 10,
+          "IsFilled": false,
+          "Need": null
+        }
+      ]
+    }
+  ]
+}

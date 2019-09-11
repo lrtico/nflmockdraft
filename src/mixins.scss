@@ -1,0 +1,618 @@
+//Set font sizes in rem with px fallback
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin chooseTeamTile(
+  $image,
+  $bgColor: black,
+  $bgPos: center center,
+  $bgSize: 70%
+) {
+  background-image: url($image);
+  background-color: $bgColor;
+  background-position: $bgPos;
+  background-size: $bgSize;
+}
+
+@mixin backImage(
+  $image,
+  $bgRepeat: no-repeat,
+  $bgPos: center center,
+  $bgSize: auto,
+  $height: inherit,
+  $alpha: 0
+) {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, $alpha)
+    ),
+    url($image);
+  background-repeat: $bgRepeat;
+  background-position: $bgPos;
+  background-size: $bgSize;
+  height: $height;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin imagegrid($qty, $margin) {
+  width: ((100% - (($qty - 1) * $margin)) / $qty);
+  &:nth-child(n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+  }
+  &:nth-child(#{$qty}n) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+//Mixins to keep media queries with styles in the final output css file
+@mixin bp-min-1920 {
+  @media only screen and (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin bp-1440 {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin bp-max-1200 {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin bp-max-1024 {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin bp-max-768 {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin bp-max-420 {
+  @media only screen and (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin bp-min-1025 {
+  @media only screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+//This will hide an element but keep it detectable by screen readers
+@mixin visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+//SVG background image with PNG fallback mixin
+@mixin background-image($name, $size: false) {
+  background-image: url(#{$image-path}/#{$name}.svg);
+  @if ($size) {
+    background-size: $size;
+  }
+  .no-svg & {
+    background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (-webkit-min-device-pixel-ratio: 1.5),
+      only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+    }
+  }
+}
+
+//Create triangles
+@mixin css-triangle(
+  $color,
+  $direction,
+  $size: 6px,
+  $position: absolute,
+  $round: false
+) {
+  @if $round {
+    border-radius: 3px;
+  }
+  @if $direction == down {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+    margin-top: 0 - round($size / 2.5);
+  } @else if $direction == up {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+    margin-bottom: 0 - round($size / 2.5);
+  } @else if $direction == right {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+    margin-right: -$size;
+    margin-left: $size;
+  } @else if $direction == left {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+    margin-left: -$size;
+    margin-right: $size;
+  }
+}
+
+//Truncate ... text
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//Center an element horizontally
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+//Style placeholders with vendor prefixes
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+//Flexbox
+//----------------------------------------------------------------------
+
+// Flexbox Containers
+//
+// The 'flex' value causes an element to generate a block-level flex
+// container box.
+//
+// The 'inline-flex' value causes an element to generate a inline-level
+// flex container box.
+//
+// display: flex | inline-flex
+//
+// http://w3.org/tr/css3-flexbox/#flex-containers
+//
+// (Placeholder selectors for each type, for those who rather @extend)
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%flexbox {
+  @include flexbox;
+}
+
+//----------------------------------
+
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+%inline-flex {
+  @include inline-flex;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Direction
+//
+// The 'flex-direction' property specifies how flex items are placed in
+// the flex container, by setting the direction of the flex container's
+// main axis. This determines the direction that flex items are laid out in.
+//
+// Values: row | row-reverse | column | column-reverse
+// Default: row
+//
+// http://w3.org/tr/css3-flexbox/#flex-direction-property
+
+@mixin flex-direction($value: row) {
+  @if $value == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+  } @else if $value == column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  } @else if $value == column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+  } @else {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+  }
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+// Shorter version:
+@mixin flex-dir($value: false) {
+  @include flex-direction($value);
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Wrap
+//
+// The 'flex-wrap' property controls whether the flex container is single-line
+// or multi-line, and the direction of the cross-axis, which determines
+// the direction new lines are stacked in.
+//
+// Values: nowrap | wrap | wrap-reverse
+// Default: nowrap
+//
+// http://w3.org/tr/css3-flexbox/#flex-wrap-property
+
+@mixin flex-wrap($value: nowrap) {
+  // No Webkit Box fallback.
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  @if $value == nowrap {
+    -ms-flex-wrap: none;
+  } @else {
+    -ms-flex-wrap: $value;
+  }
+  flex-wrap: $value;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Flow (shorthand)
+//
+// The 'flex-flow' property is a shorthand for setting the 'flex-direction'
+// and 'flex-wrap' properties, which together define the flex container's
+// main and cross axes.
+//
+// Values: <flex-direction> | <flex-wrap>
+// Default: row nowrap
+//
+// http://w3.org/tr/css3-flexbox/#flex-flow-property
+
+@mixin flex-flow(
+  $values: (
+    row nowrap,
+  )
+) {
+  // No Webkit Box fallback.
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Order
+//
+// The 'order' property controls the order in which flex items appear within
+// their flex container, by assigning them to ordinal groups.
+//
+// Default: 0
+//
+// http://w3.org/tr/css3-flexbox/#order-property
+
+@mixin order($int: 0) {
+  -webkit-box-ordinal-group: $int + 1;
+  -webkit-order: $int;
+  -moz-order: $int;
+  -ms-flex-order: $int;
+  order: $int;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Grow
+//
+// The 'flex-grow' property sets the flex grow factor. Negative numbers
+// are invalid.
+//
+// Default: 0
+//
+// http://w3.org/tr/css3-flexbox/#flex-grow-property
+
+@mixin flex-grow($int: 0) {
+  -webkit-box-flex: $int;
+  -webkit-flex-grow: $int;
+  -moz-flex-grow: $int;
+  -ms-flex-positive: $int;
+  flex-grow: $int;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Shrink
+//
+// The 'flex-shrink' property sets the flex shrink factor. Negative numbers
+// are invalid.
+//
+// Default: 1
+//
+// http://w3.org/tr/css3-flexbox/#flex-shrink-property
+
+@mixin flex-shrink($int: 1) {
+  -webkit-flex-shrink: $int;
+  -moz-flex-shrink: $int;
+  -ms-flex-negative: $int;
+  flex-shrink: $int;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Basis
+//
+// The 'flex-basis' property sets the flex basis. Negative lengths are invalid.
+//
+// Values: Like "width"
+// Default: auto
+//
+// http://www.w3.org/TR/css3-flexbox/#flex-basis-property
+
+@mixin flex-basis($value: auto) {
+  -webkit-flex-basis: $value;
+  -moz-flex-basis: $value;
+  -ms-flex-preferred-size: $value;
+  flex-basis: $value;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox "Flex" (shorthand)
+//
+// The 'flex' property specifies the components of a flexible length: the
+// flex grow factor and flex shrink factor, and the flex basis. When an
+// element is a flex item, 'flex' is consulted instead of the main size
+// property to determine the main size of the element. If an element is
+// not a flex item, 'flex' has no effect.
+//
+// Values: none | <flex-grow> <flex-shrink> || <flex-basis>
+// Default: See individual properties (1 1 0).
+//
+// http://w3.org/tr/css3-flexbox/#flex-property
+
+@mixin flex($fg: 1, $fs: null, $fb: null) {
+  // Set a variable to be used by box-flex properties
+  $fg-boxflex: $fg;
+
+  // Box-Flex only supports a flex-grow value so let's grab the
+  // first item in the list and just return that.
+  @if type-of($fg) == "list" {
+    $fg-boxflex: nth($fg, 1);
+  }
+
+  -webkit-box-flex: $fg-boxflex;
+  -webkit-flex: $fg $fs $fb;
+  -moz-box-flex: $fg-boxflex;
+  -moz-flex: $fg $fs $fb;
+  -ms-flex: $fg $fs $fb;
+  flex: $fg $fs $fb;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Justify Content
+//
+// The 'justify-content' property aligns flex items along the main axis
+// of the current line of the flex container. This is done after any flexible
+// lengths and any auto margins have been resolved. Typically it helps distribute
+// extra free space leftover when either all the flex items on a line are
+// inflexible, or are flexible but have reached their maximum size. It also
+// exerts some control over the alignment of items when they overflow the line.
+//
+// Note: 'space-*' values not supported in older syntaxes.
+//
+// Values: flex-start | flex-end | center | space-between | space-around
+// Default: flex-start
+//
+// http://w3.org/tr/css3-flexbox/#justify-content-property
+
+@mixin justify-content($value: flex-start) {
+  @if $value == flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+  } @else if $value == flex-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+  } @else if $value == space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  } @else {
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+  }
+  -webkit-justify-content: $value;
+  -moz-justify-content: $value;
+  justify-content: $value;
+}
+// Shorter version:
+@mixin flex-just($value: flex-start) {
+  @include justify-content($value);
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Align Items
+//
+// Flex items can be aligned in the cross axis of the current line of the
+// flex container, similar to 'justify-content' but in the perpendicular
+// direction. 'align-items' sets the default alignment for all of the flex
+// container's items, including anonymous flex items. 'align-self' allows
+// this default alignment to be overridden for individual flex items. (For
+// anonymous flex items, 'align-self' always matches the value of 'align-items'
+// on their associated flex container.)
+//
+// Values: flex-start | flex-end | center | baseline | stretch
+// Default: stretch
+//
+// http://w3.org/tr/css3-flexbox/#align-items-property
+
+@mixin align-items($value: stretch) {
+  @if $value == flex-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+  } @else if $value == flex-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+  } @else {
+    -webkit-box-align: $value;
+    -ms-flex-align: $value;
+  }
+  -webkit-align-items: $value;
+  -moz-align-items: $value;
+  align-items: $value;
+}
+
+//----------------------------------
+
+// Flexbox Align Self
+//
+// Values: auto | flex-start | flex-end | center | baseline | stretch
+// Default: auto
+
+@mixin align-self($value: auto) {
+  // No Webkit Box Fallback.
+  -webkit-align-self: $value;
+  -moz-align-self: $value;
+  @if $value == flex-start {
+    -ms-flex-item-align: start;
+  } @else if $value == flex-end {
+    -ms-flex-item-align: end;
+  } @else {
+    -ms-flex-item-align: $value;
+  }
+  align-self: $value;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Align Content
+//
+// The 'align-content' property aligns a flex container's lines within the
+// flex container when there is extra space in the cross-axis, similar to
+// how 'justify-content' aligns individual items within the main-axis. Note,
+// this property has no effect when the flexbox has only a single line.
+//
+// Values: flex-start | flex-end | center | space-between | space-around | stretch
+// Default: stretch
+//
+// http://w3.org/tr/css3-flexbox/#align-content-property
+
+@mixin align-content($value: stretch) {
+  // No Webkit Box Fallback.
+  -webkit-align-content: $value;
+  -moz-align-content: $value;
+  @if $value == flex-start {
+    -ms-flex-line-pack: start;
+  } @else if $value == flex-end {
+    -ms-flex-line-pack: end;
+  } @else {
+    -ms-flex-line-pack: $value;
+  }
+  align-content: $value;
+}
+
+//Rotate carets
+@mixin rotate-caret($value: rotate(-45deg)) {
+  @if $value == right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  } @else if $value == left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  } @else if $value == up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  } @else if $value == down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  } @else {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}

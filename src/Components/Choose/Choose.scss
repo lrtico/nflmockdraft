@@ -1,0 +1,493 @@
+.choose {
+  .choose__selected {
+    @include flexbox;
+    @include align-items(center);
+
+    .choose__selected-team-text {
+      border-left: 1px solid $gray;
+      overflow: hidden;
+      padding-left: 27px;
+      position: relative;
+
+      > span {
+        color: black;
+        display: block;
+        @include font-size(4.2);
+        font-weight: $main-bold;
+        transform: translateX(-200%);
+        transition: all 600ms cubic-bezier(0.45, 0.29, 0.16, 1);
+      }
+    }
+  }
+
+  .conferences {
+    @include flexbox;
+    @include flex(1 1 100%);
+
+    .conferences__conference {
+      @include flex(1 1 50%);
+      @include flexbox;
+      @include flex-wrap(wrap);
+
+      > span {
+        display: block;
+        @include flex(1 1 100%);
+        font-style: $main-italic;
+        font-weight: $main-bold;
+        @include font-size(1.5);
+        margin-bottom: 18px;
+        margin-left: 18px;
+        position: relative;
+
+        &:after {
+          background-color: #808080;
+          content: "";
+          height: 1px;
+          position: absolute;
+          bottom: 3px;
+          left: 30px;
+          width: calc(100% - 30px);
+        }
+      }
+
+      .divisions {
+        @include flexbox;
+        @include justify-content(flex-start);
+        @include flex(1 1 100%);
+
+        .division {
+          @include flex(0 0 25%);
+
+          > span {
+            display: block;
+            font-family: $stint;
+            margin-bottom: 9px;
+            margin-left: 18px;
+            text-transform: uppercase;
+          }
+
+          .division__team {
+            background-image: url(../../img/ravens.png);
+            cursor: pointer;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 800ms;
+
+            &:before {
+              content: "";
+              display: table;
+              padding-top: 100%;
+            }
+
+            &.division__team--ravens {
+              @include chooseTeamTile(
+                "./img/ravens.png",
+                $ravens-purple,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: darken($ravens-purple, 10%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--bengals {
+              @include chooseTeamTile("./img/bengals.png", $bengals-orange);
+
+              &:hover {
+                background-color: darken($bengals-orange, 10%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--browns {
+              @include chooseTeamTile(
+                "./img/browns.png",
+                lighten($browns-brown, 10%),
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: darken($browns-brown, 10%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--steelers {
+              @include chooseTeamTile(
+                "./img/steelers.png",
+                darken($steelers-gray, 80%)
+              );
+
+              &:hover {
+                background-color: darken($steelers-gray, 50%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--texans {
+              @include chooseTeamTile("./img/texans.png", $texans-red);
+
+              &:hover {
+                background-color: darken($texans-red, 10%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--colts {
+              @include chooseTeamTile("./img/colts.png", $colts-blue);
+
+              &:hover {
+                background-color: darken($colts-blue, 10%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--jaguars {
+              @include chooseTeamTile(
+                "./img/jaguars.png",
+                $jaguars-blue,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: darken($jaguars-blue, 10%);
+                background-size: 75%;
+              }
+            }
+
+            &.division__team--titans {
+              @include chooseTeamTile(
+                "./img/titans.png",
+                $titans-light-blue,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: darken($titans-light-blue, 20%);
+                background-size: 75%;
+              }
+            }
+
+            &.division__team--bills {
+              @include chooseTeamTile("./img/bills.png", $bills-blue);
+
+              &:hover {
+                background-color: darken($bills-blue, 20%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--dolphins {
+              @include chooseTeamTile("./img/dolphins.png", $dolphins-orange);
+
+              &:hover {
+                background-color: darken($dolphins-orange, 20%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--jets {
+              @include chooseTeamTile(
+                "./img/jets.png",
+                $jets-green,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: lighten($jets-green, 10%);
+                background-size: 75%;
+              }
+            }
+
+            &.division__team--patriots {
+              @include chooseTeamTile(
+                "./img/patriots.png",
+                $patriots-blue,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: lighten($patriots-blue, 10%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--broncos {
+              @include chooseTeamTile(
+                "./img/broncos.png",
+                $broncos-orange,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: darken($broncos-orange, 20%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--chiefs {
+              @include chooseTeamTile(
+                "./img/chiefs.png",
+                $chiefs-red,
+                center center,
+                90%
+              );
+
+              &:hover {
+                background-color: darken($chiefs-red, 20%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--raiders {
+              @include chooseTeamTile("./img/raiders.png", $raiders-silver);
+
+              &:hover {
+                background-color: darken($raiders-silver, 20%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--chargers {
+              @include chooseTeamTile(
+                "./img/chargers.png",
+                $chargers-blue,
+                center center,
+                85%
+              );
+
+              &:hover {
+                background-color: darken($chargers-blue, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--bears {
+              @include chooseTeamTile(
+                "./img/bears.png",
+                $bears-blue,
+                center center,
+                85%
+              );
+
+              &:hover {
+                background-color: darken($bears-blue, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--lions {
+              @include chooseTeamTile(
+                "./img/lions.png",
+                $lions-gray,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($lions-gray, 20%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--packers {
+              @include chooseTeamTile(
+                "./img/packers.png",
+                $packers-green,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($packers-green, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--vikings {
+              @include chooseTeamTile(
+                "./img/vikings.png",
+                $vikings-purple,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($vikings-purple, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--falcons {
+              @include chooseTeamTile("./img/falcons.png", black);
+
+              &:hover {
+                background-color: lighten(black, 10%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--panthers {
+              @include chooseTeamTile(
+                "./img/panthers.png",
+                $panthers-blue,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($panthers-blue, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--saints {
+              @include chooseTeamTile(
+                "./img/saints.png",
+                $saints-gold,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($saints-gold, 20%);
+                background-size: 70%;
+              }
+            }
+
+            &.division__team--buccaneers {
+              @include chooseTeamTile("./img/buccaneers.png", black);
+
+              &:hover {
+                background-color: lighten(black, 10%);
+                background-size: 60%;
+              }
+            }
+
+            &.division__team--cowboys {
+              @include chooseTeamTile(
+                "./img/cowboys.png",
+                $cowboys-gray,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($cowboys-gray, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--giants {
+              @include chooseTeamTile(
+                "./img/giants.png",
+                $giants-blue,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($giants-blue, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--eagles {
+              @include chooseTeamTile(
+                "./img/eagles.png",
+                $eagles-green,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($eagles-green, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--redskins {
+              @include chooseTeamTile(
+                "./img/redskins.png",
+                $redskins-burgundy,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($redskins-burgundy, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--cardinals {
+              @include chooseTeamTile(
+                "./img/cardinals.png",
+                $cardinals-red,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($cardinals-red, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--rams {
+              @include chooseTeamTile(
+                "./img/rams.png",
+                $rams-gold,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($rams-gold, 20%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--49ers {
+              @include chooseTeamTile(
+                "./img/49ers.png",
+                black,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: lighten(black, 10%);
+                background-size: 65%;
+              }
+            }
+
+            &.division__team--seahawks {
+              @include chooseTeamTile(
+                "./img/seahawks.png",
+                $seahawks-blue,
+                center center,
+                80%
+              );
+
+              &:hover {
+                background-color: darken($seahawks-blue, 20%);
+                background-size: 65%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
