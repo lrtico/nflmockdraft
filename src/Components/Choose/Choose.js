@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Step from '../Step/Step';
 
 const Choose = props => {
   const { teams } = props;
   return (
     <div className="choose">
       <div className="choose__selected">
-        <div className="step">
-          1. Select your team
-        </div>
+        <Step label="1. Select your team" />
         <div className="choose__selected-team-text">
           <span>Washington Redskins</span>
         </div>
@@ -41,7 +40,7 @@ const Choose = props => {
 };
 
 Choose.propTypes = {
-
+  teams: PropTypes.array,
 };
 
 export default Choose;

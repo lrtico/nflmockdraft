@@ -68,16 +68,21 @@
 
           .division__team {
             background-image: url(../../img/ravens.png);
-            cursor: pointer;
-            overflow: hidden;
             background-repeat: no-repeat;
             background-position: center center;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
             transition: all 800ms;
 
             &:before {
               content: "";
               display: table;
               padding-top: 100%;
+            }
+
+            &.division__team--not-selected {
+              filter: grayscale(100%);
             }
 
             &.division__team--ravens {

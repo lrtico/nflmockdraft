@@ -190,7 +190,7 @@ class App extends Component {
               {
                 "id": 27,
                 "name": "Philadelphia Eagles",
-                "shortName": "eagless"
+                "shortName": "eagles"
               },
               {
                 "id": 28,
@@ -228,13 +228,78 @@ class App extends Component {
         ]
       }
     ],
+    "boards": [
+      {
+        "id": 1,
+        "name": "Walter Football"
+      },
+      {
+        "id": 2,
+        "name": "Gil Brandt"
+      },
+      {
+        "id": 3,
+        "name": "Scouts, Inc."
+      },
+      {
+        "id": 4,
+        "name": "Mel Kiper, Jr."
+      },
+      {
+        "id": 5,
+        "name": "NFL Countdown"
+      },
+      {
+        "id": 6,
+        "name": "Daniel Jeramiah"
+      }
+    ],
+    "rounds": [
+      {
+        "id": 1,
+        "round": "1",
+      },
+      {
+        "id": 2,
+        "round": "2",
+      },
+      {
+        "id": 3,
+        "round": "3",
+      },
+      {
+        "id": 4,
+        "round": "4",
+      },
+      {
+        "id": 5,
+        "round": "5",
+      },
+      {
+        "id": 6,
+        "round": "6",
+      },
+      {
+        "id": 7,
+        "round": "7",
+      }
+    ],
+    "userSettings": {
+      "id": 1,
+      "board": null,
+      "rounds": null,
+      "selectedTeam": "ravens",
+      "selectedPlayers": [],
+    }
   };
 
   render() {
-    const { choose } = this.state;
+    const { choose, boards, userSettings: { selectedTeam }, rounds } = this.state;
     return (
       <div>
-        <Choose teams={choose} />
+        {/* <Choose teams={choose} /> */}
+        <Options boards={boards} team={selectedTeam} rounds={rounds} />
+        {/* <Simulator /> */}
       </div>
     );
   }
