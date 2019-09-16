@@ -71,7 +71,6 @@
             background-repeat: no-repeat;
             background-position: center center;
             cursor: pointer;
-            overflow: hidden;
             position: relative;
             transition: all 800ms;
 
@@ -489,6 +488,13 @@
                 background-color: darken($seahawks-blue, 20%);
                 background-size: 65%;
               }
+            }
+
+            .btn-wrapper {
+              position: absolute;
+              top: -18px;
+              right: -30px;
+              z-index: 9;
             }
           }
         }

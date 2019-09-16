@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Boards from './Boards';
 import ButtonArrow from '../Buttons/ButtonArrow';
 import ButtonText from '../Buttons/ButtonText';
@@ -21,7 +22,9 @@ const Options = props => {
           <ButtonArrow label="Let's Draft!" team={team} />
         </div>
       </div>
-      <ButtonText label="Repick your team" team={team} />
+      <Link className={`back-to-choose ${team}`} to="/">
+        <ButtonText label="Repick your team" team={team} />
+      </Link>
     </div>
   )
 }

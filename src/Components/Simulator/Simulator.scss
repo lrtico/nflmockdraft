@@ -10,6 +10,10 @@
       font-weight: 900;
       margin-top: 27px;
 
+      &.ravens {
+        color: $ravens-purple;
+      }
+
       &.redskins {
         color: $redskins-burgundy;
       }
@@ -139,21 +143,278 @@
 
             polygon {
               fill: none;
-              stroke: $redskins-burgundy;
+              stroke: hotpink;
               stroke-width: 1.313;
               stroke-linejoin: round;
               stroke-miterlimit: 10;
+
+              &.ravens {
+                stroke: $ravens-purple;
+              }
+
+              &.bengals {
+                stroke: $bengals-orange;
+              }
+
+              &.browns {
+                stroke: $browns-brown;
+              }
+
+              &.steelers {
+                stroke: $steelers-gray;
+              }
+
+              &.texans {
+                stroke: $texans-red;
+              }
+
+              &.colts {
+                stroke: $colts-blue;
+              }
+
+              &.jaguars {
+                stroke: $jaguars-blue;
+              }
+
+              &.titans {
+                stroke: $titans-light-blue;
+              }
+
+              &.bills {
+                stroke: $bills-blue;
+              }
+
+              &.dolphins {
+                stroke: $dolphins-orange;
+              }
+
+              &.jets {
+                stroke: $jets-green;
+              }
+
+              &.patriots {
+                stroke: $patriots-blue;
+              }
+
+              &.broncos {
+                stroke: $broncos-orange;
+              }
+
+              &.chiefs {
+                stroke: $chiefs-red;
+              }
+
+              &.raiders {
+                stroke: $raiders-silver;
+              }
+
+              &.chargers {
+                stroke: $chargers-blue;
+              }
+
+              &.falcons {
+                stroke: $falcons-black;
+              }
+
+              &.panthers {
+                stroke: $panthers-blue;
+              }
+
+              &.saints {
+                stroke: $saints-gold;
+              }
+
+              &.buccaneers {
+                stroke: $buccaneers-black;
+              }
+
+              &.bears {
+                stroke: $bears-blue;
+              }
+
+              &.lions {
+                stroke: $lions-gray;
+              }
+
+              &.packers {
+                stroke: $packers-green;
+              }
+
+              &.vikings {
+                stroke: $vikings-purple;
+              }
+
+              &.cowboys {
+                stroke: $cowboys-gray;
+              }
+
+              &.giants {
+                stroke: $giants-blue;
+              }
+
+              &.eagles {
+                stroke: $eagles-green;
+              }
+
+              &.redskins {
+                stroke: $redskins-burgundy;
+              }
+
+              &.cardinals {
+                stroke: $cardinals-red;
+              }
+
+              &.rams {
+                stroke: $rams-gold;
+              }
+
+              &.sf49ers {
+                stroke: $sf49ers-red;
+              }
+
+              &.seahawks {
+                stroke: $seahawks-blue;
+              }
             }
 
             polyline {
               fill: none;
-              stroke: $redskins-burgundy;
+              stroke: hotpink;
               stroke-linecap: round;
               stroke-miterlimit: 10;
+
+              &.ravens {
+                stroke: $ravens-purple;
+              }
+
+              &.bengals {
+                stroke: $bengals-orange;
+              }
+
+              &.browns {
+                stroke: $browns-brown;
+              }
+
+              &.steelers {
+                stroke: $steelers-gray;
+              }
+
+              &.texans {
+                stroke: $texans-red;
+              }
+
+              &.colts {
+                stroke: $colts-blue;
+              }
+
+              &.jaguars {
+                stroke: $jaguars-blue;
+              }
+
+              &.titans {
+                stroke: $titans-light-blue;
+              }
+
+              &.bills {
+                stroke: $bills-blue;
+              }
+
+              &.dolphins {
+                stroke: $dolphins-orange;
+              }
+
+              &.jets {
+                stroke: $jets-green;
+              }
+
+              &.patriots {
+                stroke: $patriots-blue;
+              }
+
+              &.broncos {
+                stroke: $broncos-orange;
+              }
+
+              &.chiefs {
+                stroke: $chiefs-red;
+              }
+
+              &.raiders {
+                stroke: $raiders-silver;
+              }
+
+              &.chargers {
+                stroke: $chargers-blue;
+              }
+
+              &.falcons {
+                stroke: $falcons-black;
+              }
+
+              &.panthers {
+                stroke: $panthers-blue;
+              }
+
+              &.saints {
+                stroke: $saints-gold;
+              }
+
+              &.buccaneers {
+                stroke: $buccaneers-black;
+              }
+
+              &.bears {
+                stroke: $bears-blue;
+              }
+
+              &.lions {
+                stroke: $lions-gray;
+              }
+
+              &.packers {
+                stroke: $packers-green;
+              }
+
+              &.vikings {
+                stroke: $vikings-purple;
+              }
+
+              &.cowboys {
+                stroke: $cowboys-gray;
+              }
+
+              &.giants {
+                stroke: $giants-blue;
+              }
+
+              &.eagles {
+                stroke: $eagles-green;
+              }
+
+              &.redskins {
+                stroke: $redskins-burgundy;
+              }
+
+              &.cardinals {
+                stroke: $cardinals-red;
+              }
+
+              &.rams {
+                stroke: $rams-gold;
+              }
+
+              &.sf49ers {
+                stroke: $sf49ers-red;
+              }
+
+              &.seahawks {
+                stroke: $seahawks-blue;
+              }
             }
           }
 
           .players__filters {
+            color: hotpink;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -161,8 +422,135 @@
             padding-top: 9px;
             border-top: 1px solid rgba($gray, 0.5);
 
-            > li {
+            &.ravens {
+              color: $ravens-purple;
+            }
+
+            &.bengals {
+              color: $bengals-orange;
+            }
+
+            &.browns {
+              color: $browns-brown;
+            }
+
+            &.steelers {
+              color: $steelers-gray;
+            }
+
+            &.texans {
+              color: $texans-red;
+            }
+
+            &.colts {
+              color: $colts-blue;
+            }
+
+            &.jaguars {
+              color: $jaguars-blue;
+            }
+
+            &.titans {
+              color: $titans-light-blue;
+            }
+
+            &.bills {
+              color: $bills-blue;
+            }
+
+            &.dolphins {
+              color: $dolphins-orange;
+            }
+
+            &.jets {
+              color: $jets-green;
+            }
+
+            &.patriots {
+              color: $patriots-blue;
+            }
+
+            &.broncos {
+              color: $broncos-orange;
+            }
+
+            &.chiefs {
+              color: $chiefs-red;
+            }
+
+            &.raiders {
+              color: $raiders-silver;
+            }
+
+            &.chargers {
+              color: $chargers-blue;
+            }
+
+            &.falcons {
+              color: $falcons-black;
+            }
+
+            &.panthers {
+              color: $panthers-blue;
+            }
+
+            &.saints {
+              color: $saints-gold;
+            }
+
+            &.buccaneers {
+              color: $buccaneers-black;
+            }
+
+            &.bears {
+              color: $bears-blue;
+            }
+
+            &.lions {
+              color: $lions-gray;
+            }
+
+            &.packers {
+              color: $packers-green;
+            }
+
+            &.vikings {
+              color: $vikings-purple;
+            }
+
+            &.cowboys {
+              color: $cowboys-gray;
+            }
+
+            &.giants {
+              color: $giants-blue;
+            }
+
+            &.eagles {
+              color: $eagles-green;
+            }
+
+            &.redskins {
               color: $redskins-burgundy;
+            }
+
+            &.cardinals {
+              color: $cardinals-red;
+            }
+
+            &.rams {
+              color: $rams-gold;
+            }
+
+            &.sf49ers {
+              color: $sf49ers-red;
+            }
+
+            &.seahawks {
+              color: $seahawks-blue;
+            }
+
+            > li {
               cursor: pointer;
               font-weight: $main-bold;
               position: relative;
@@ -180,6 +568,14 @@
               }
 
               &:hover {
+                transform: translateX(3px);
+
+                &:after {
+                  width: 18px;
+                }
+              }
+
+              &.players__filters--filtering {
                 transform: translateX(3px);
 
                 &:after {
@@ -298,6 +694,10 @@
                 }
               }
 
+              &.table__row--is-open {
+                @include flex-wrap(wrap);
+              }
+
               &.table__row--select-open {
                 background-color: $lightGray;
                 background: linear-gradient(
@@ -314,9 +714,9 @@
                 padding-left: 18px;
                 padding-right: 18px;
                 position: relative;
-                top: -1px;
+                top: 6px;
                 width: calc(100% - 36px);
-                z-index: 1;
+                z-index: -1;
 
                 &:hover {
                   &:after {
@@ -355,6 +755,31 @@
                     }
                   }
                 }
+              }
+              // CSSTransition from react-transition-group
+              /* This fires as soon as the element enters the DOM */
+              &.table__row--select-enter,
+              &.table__row--select-appear {
+                max-height: 10px;
+                opacity: 0;
+              }
+              /* This is where we can add the transition*/
+              &.table__row--select-enter-active,
+              &.table__row--select-appear-active {
+                opacity: 1;
+                max-height: 54px;
+                transition: all 400ms ease-out;
+              }
+              /* This fires as soon as the this.state.showList is false */
+              &.table__row--select-exit {
+                max-height: 54px;
+                opacity: 1;
+              }
+              /* fires as element leaves the DOM*/
+              &.table__row--select-exit-active {
+                max-height: 1px;
+                opacity: 0;
+                transition: all 500ms ease-in;
               }
             }
           }
@@ -437,24 +862,84 @@
               background-position: 3px -42px;
             }
 
+            &.steelers {
+              background-position: 2px -126px;
+            }
+
+            &.bills {
+              background-position: -82px -0;
+            }
+
             &.dolphins {
               background-position: -80px -40px;
+            }
+
+            &.patriots {
+              background-position: -83px -125px;
             }
 
             &.jets {
               background-position: -80px -85px;
             }
 
+            &.colts {
+              background-position: -39px -43px;
+            }
+
             &.jaguars {
               background-position: -40px -83px;
+            }
+
+            &.titans {
+              background-position: -43px -126px;
             }
 
             &.texans {
               background-position: -40px -2px;
             }
 
+            &.bears {
+              background-position: -163px -3px;
+            }
+
             &.lions {
               background-position: -164px -43px;
+            }
+
+            &.packers {
+              background-position: -163px -85px;
+            }
+
+            &.vikings {
+              background-position: -163px -125px;
+            }
+
+            &.falcons {
+              background-position: -204px 0px;
+            }
+
+            &.panthers {
+              background-position: -204px -45px;
+            }
+
+            &.saints {
+              background-position: -204px -85px;
+            }
+
+            &.buccaneers {
+              background-position: -205px -126px;
+            }
+
+            &.cowboys {
+              background-position: -245px -3px;
+            }
+
+            &.eagles {
+              background-position: -246px -86px;
+            }
+
+            &.giants {
+              background-position: -245px -43px;
             }
 
             &.redskins {
@@ -463,6 +948,34 @@
 
             &.cardinals {
               background-position: -285px -3px;
+            }
+
+            &.sf49ers {
+              background-position: -285px -85px;
+            }
+
+            &.rams {
+              background-position: -287px -42px;
+            }
+
+            &.seahawks {
+              background-position: -284px -126px;
+            }
+
+            &.broncos {
+              background-position: -121px -0;
+            }
+
+            &.chiefs {
+              background-position: -119px -44px;
+            }
+
+            &.raiders {
+              background-position: -121px -85px;
+            }
+
+            &.chargers {
+              background-position: -121px -125px;
             }
           }
           .table__player-round-number {
@@ -481,41 +994,5 @@
         }
       }
     }
-  }
-}
-
-.team-ribbon {
-  background-image: url(../../nfl-team-logos-sprite.png);
-  background-color: $ravens-purple;
-  background-position: 6px 12px;
-  background-repeat: no-repeat;
-  background-size: 900px;
-  @include flex(0 0 120px);
-  height: 150px;
-  margin-left: 18px;
-  margin-right: 36px;
-  position: relative;
-  width: 120px;
-
-  &:after {
-    border-left: 60px solid transparent;
-    border-bottom: 18px solid white;
-    border-right: 60px solid transparent;
-    content: "";
-    height: 0;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 0px;
-  }
-
-  &.team-ribbon--ravens {
-    background-color: $ravens-purple;
-    background-position: 6px 12px;
-  }
-
-  &.team-ribbon--redskins {
-    background-color: $redskins-burgundy;
-    background-position: -678px -330px;
   }
 }

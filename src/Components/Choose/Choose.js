@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Step from '../Step/Step';
+import TeamSelectedText from './TeamSelectedText';
+import ButtonArrow from '../Buttons/ButtonArrow';
 
 const Choose = props => {
-  const { teams } = props;
+  const { teams, teamSelectedText, team } = props;
   return (
     <div className="choose">
       <div className="choose__selected">
         <Step label="1. Select your team" />
-        <div className="choose__selected-team-text">
-          <span>Washington Redskins</span>
-        </div>
+        <TeamSelectedText teamNameText={teamSelectedText} />
       </div>
       <div className="conferences">
         {teams.map((c, i) => (
@@ -26,7 +26,16 @@ const Choose = props => {
                   </span>
                   <div className="division__teams">
                     {d.teams.map(t => (
-                      <div key={`${t.shortName}${t.id}`} className={`division__team division__team--${t.shortName}`} />
+                      <div
+                        key={`${t.shortName}${t.id}`}
+                        className={`division__team division__team--${t.shortName}`}
+                      >
+                        {
+                          team !== null && team === t.shortName
+                          ? <ButtonArrow label="Next" team={team} />
+                          : null
+                        }
+                      </div>
                     ))}
                   </div>
                 </div>

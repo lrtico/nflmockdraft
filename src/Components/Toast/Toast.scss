@@ -1,0 +1,26 @@
+.toast {
+  background: linear-gradient(
+    103deg,
+    #bdbdbd 0%,
+    #aaaaaa 50%,
+    #a0a0a0 92%,
+    #808080e0 100%
+  );
+  transition: all 800ms cubic-bezier(1, 0, 0, 1);
+
+  &.toast--on-the-clock {
+    color: white;
+    @include font-size(3.3);
+    font-weight: 900;
+    padding: 18px;
+    position: absolute;
+    top: -200%;
+    left: calc(50% - 78px);
+    text-align: center;
+    width: 500px;
+  }
+
+  &.toast--active {
+    top: 0;
+  }
+}

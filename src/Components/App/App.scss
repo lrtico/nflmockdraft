@@ -1,33 +1,10 @@
 @import "../../mixins.scss";
 @import "../../variables.scss";
 
-.toast {
-  background: linear-gradient(
-    103deg,
-    #bdbdbd 0%,
-    #aaaaaa 50%,
-    #a0a0a0 92%,
-    #808080e0 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#1e5799',GradientType=1 );
-  transition: all 800ms cubic-bezier(0.63, 0.01, 0.25, 0.97);
-
-  &.toast--on-the-clock {
-    color: white;
-    @include font-size(3.3);
-    font-weight: 900;
-    padding: 18px;
-    position: absolute;
-    top: 0;
-    left: calc(50% - 78px);
-    text-align: center;
-    width: 500px;
-  }
-}
-
 .text-link {
   cursor: pointer;
   font-weight: $main-bold;
+  text-decoration: none;
   transition: all 400ms;
 
   &:hover {
@@ -88,6 +65,10 @@
       bottom: 0;
       width: 100%;
       z-index: 1;
+
+      &:checked ~ .radios__bg {
+        background-color: hotpink;
+      }
     }
 
     .radios__bg {
@@ -106,7 +87,7 @@
 
     &:hover {
       .radios__bg {
-        background-color: $ravens-purple;
+        background-color: hotpink;
       }
 
       > span {
@@ -121,6 +102,36 @@
 
       > span {
         color: white;
+      }
+    }
+
+    &.redskins:hover {
+      .radios__bg {
+        background-color: $redskins-burgundy;
+      }
+
+      > span {
+        color: white;
+      }
+    }
+
+    &.ravens {
+      input[type="radio"]:checked + span {
+        color: white;
+      }
+
+      input[type="radio"]:checked ~ .radios__bg {
+        background-color: $ravens-purple;
+      }
+    }
+
+    &.redskins {
+      input[type="radio"]:checked + span {
+        color: white;
+      }
+
+      input[type="radio"]:checked ~ .radios__bg {
+        background-color: $redskins-burgundy;
       }
     }
   }
@@ -172,6 +183,24 @@
 
         &:after {
           border-left-color: darken($ravens-purple, 10%);
+        }
+      }
+    }
+  }
+
+  &.redskins {
+    .btn-solid {
+      background-color: $redskins-burgundy;
+
+      &:after {
+        border-left-color: $redskins-burgundy;
+      }
+
+      &:hover {
+        background-color: darken($redskins-burgundy, 10%);
+
+        &:after {
+          border-left-color: darken($redskins-burgundy, 10%);
         }
       }
     }

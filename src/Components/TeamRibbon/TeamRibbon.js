@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TeamRibbon = props => {
   const { team } = props;
   return (
-    <div className={`options__team-ribbon ${team}`} />
+    <div className={`team-ribbon ${team}`} />
   )
 }
 
